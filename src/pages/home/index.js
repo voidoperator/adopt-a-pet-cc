@@ -41,10 +41,7 @@ const HomePage = () => {
                   {
                     <img
                       className="pet-image"
-                      src={
-                        animal.photos[0]?.medium ||
-                        '/missing-animal.png'
-                      }
+                      src={animal.photos[0]?.medium || '/missing-animal.png'}
                       alt=""
                     />
                   }

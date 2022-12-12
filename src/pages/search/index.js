@@ -6,11 +6,10 @@ import Pet from '../../components/pet';
 // import useLocation here
 
 const SearchPage = () => {
-
   // Get the search value from useLocation() here
   const search = 'REPLACE ME';
 
-  const queryParams = useMemo(() => { 
+  const queryParams = useMemo(() => {
     return new URLSearchParams('REPLACE ME');
   }, [search]);
 

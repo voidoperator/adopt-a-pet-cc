@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 // import useHistory here.
 
 const Search = () => {
-
   // get the history object here
 
   const searchInputRef = useRef();
