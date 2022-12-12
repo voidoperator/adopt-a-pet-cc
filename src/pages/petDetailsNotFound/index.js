@@ -2,16 +2,21 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const PetDetailsNotFound = () => {
-  // get the history object from useHistory()
+  const history = useHistory();
 
   const goBack = () => {
-    // Go back!
+    history.goBack();
+  };
+
+  const buttonStyle = {
+    cursor: 'pointer',
+    padding: '1rem'
   };
 
   return (
     <main className="page">
       <h3>404: Who let the dogs out?</h3>
-      <p>
+      <p className="prompt">
         Sorry, but the details for this pet have not been uploaded by the
         shelter yet. Check back later!
       </p>
@@ -20,7 +25,7 @@ const PetDetailsNotFound = () => {
         alt=""
       />
       <div className="actions-container">
-        <button className="button" onClick={goBack}>
+        <button className="button" style={buttonStyle} onClick={goBack}>
           Go Back
         </button>
       </div>
